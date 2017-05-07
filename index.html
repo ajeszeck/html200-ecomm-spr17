@@ -9,9 +9,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/main.css">
-
-  <!-- TODO: replace with your personal Font Awesome CDN link -->
-  <script src="https://use.fontawesome.com/???.js"></script>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Oswald:300,400,600,700&amp;lang=en" />
+  <script src="https://use.fontawesome.com/9d9d723649.js"></script>
 </head>
 
 <body>
@@ -24,6 +23,7 @@
           <span class="logo-w">W</span>ear
           <span class="logo-w">W</span>arehouse
         </h1>
+
       </div>
       <div class="row">
         <div class="col-md-12">
@@ -31,8 +31,8 @@
             <ul>
               <li><a href="#">HATS</a></li>
               <li><a href="#">GLOVES</a></li>
-              <li><a href="#">SCARVES</a></li>
-              <li class="cart-info">
+              <li class="right"><a href="#">SCARVES</a></li>
+              <li class="right cart-info">
                 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
               </li>
             </ul>
@@ -44,12 +44,11 @@
   <main class="container-fluid">
     <div class="row">
       <aside class="col-md-2">
-        <form>
+        <form name="mailingList" onsubmit="thankYou();">
           <label>Sign up for our mailing list:
             <input type="email" name="email">
           </label>
-
-          <input type="submit" value="Submit">
+          <input class="submit" type="submit" value="Submit">
         </form>
       </aside>
       <section class="col-md-10">

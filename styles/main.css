@@ -1,11 +1,16 @@
+html {
+  font-family: 'Oswald', sans-serif;
+}
+
 body {
   font-size: 100%;
-  font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: Montserrat, "Oswald", Helvetica, Arial, sans-serif;
   box-sizing: border-box;
+
 }
 
 p {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: "Oswald", Helvetica, Arial, sans-serif;
   font-weight: lighter;
   color: #2d2d2d;
 }
@@ -13,12 +18,14 @@ p {
 /* TODO: size images manually so this is not necessary */
 img {
   max-height: 20rem;
+  max-width: 100%;
 }
 
 /***************** NAV *****************/
 
 nav a:hover {
   text-decoration: none;
+  color: black;
 }
 
 nav {
@@ -27,16 +34,24 @@ nav {
   display: inline-flex;
   width: 100%;
   background-color: #4E77C7;
-
 }
 
 ul {
   display: flex;
   flex-flow; row wrap;
-  justify-content: center;
-
+  justify-content: flex-start;
   padding: 0.8rem;
 }
+
+i {
+  color: white;
+  margin-left: 1rem;
+}
+
+i:hover {
+  color: black;
+}
+
 
 a {
   color: white;
@@ -58,13 +73,19 @@ header img {
 
 h1 {
   color: #4E77C7;
+  font-size: 2rem;
 }
 
 h1 .logo-w {
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 
 /**************** ASIDE ****************/
+
+form {
+  max-width: 98%;
+  text-align: center;
+}
 
 input[type="submit"] {
   padding: .25rem;
@@ -79,6 +100,7 @@ aside {
   display: inline-flex;
   background-color: black;
   text-align: center;
+  margin-top: 0.5rem;
 }
 
 form > label {
@@ -131,7 +153,7 @@ section > h1 {
   height: 100%;
 }
 
-.products img {
+img {
   max-width: 100%;
 }
 
@@ -150,4 +172,8 @@ h3 {
   font-size: 1.2rem;
   text-align: center;
   color: #2d2d2d;
+}
+
+.item * {
+  margin: 0.5rem;
 }
