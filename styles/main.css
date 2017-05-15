@@ -56,9 +56,14 @@ ul {
 
   ul li {
     display: block;
-    border-bottom: 1px solid white;
+    border-bottom: 1px dashed white;
     width: 100%;
-    padding: 0.25rem;
+    padding: 0.5rem;
+  }
+
+  form.search {
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -99,7 +104,7 @@ h1 {
 }
 
 h1 .logo-w {
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 
 @media (max-width: 445px) {
@@ -222,6 +227,13 @@ section > h1 {
   margin: 1rem;
   height: 100%;
 }
+
+@media (max-width: 400px) {
+  .item {
+    max-width: 185px;
+  }
+}
+
 
 img {
   max-width: 100%;
