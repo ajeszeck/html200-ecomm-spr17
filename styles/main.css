@@ -149,10 +149,12 @@ input[type=email]:focus {
 }
 
 aside {
-  display: inline-flex;
+  display: block;
   background-color: black;
   text-align: center;
   margin-top: 0.5rem;
+  padding-left: 0;
+  flex-wrap: wrap;
 }
 
 form > label {
@@ -167,6 +169,12 @@ form.search {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+form.email {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  overflow: hidden;
 }
 
 input.email {
