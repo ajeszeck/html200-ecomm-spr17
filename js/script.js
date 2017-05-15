@@ -64,7 +64,7 @@ function addToCart () {
 
 function removeFromCart () {
   event.preventDefault ();
-  if (cart.length > 1) {
+  if (cart.length > 0) {
     cart.pop("item");
     console.log("There are " + cart.length + " items in your cart.");
   }
