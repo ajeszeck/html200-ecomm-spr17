@@ -228,6 +228,10 @@ section > h1 {
   height: 100%;
 }
 
+div.item img {
+  align-self: center;
+}
+
 @media (max-width: 400px) {
   .item {
     max-width: 185px;
