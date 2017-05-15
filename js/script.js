@@ -55,15 +55,14 @@ function thankYou() {
   console.log("Thank you for signing up for our mailing list, " + document.mailingList.email.value + "!");
 }
 
-var cart = [];
 
+var cart = [];
 
 function addToCart () {
   event.preventDefault();
-  var item = document.getElementById("add").option.value;
-  cart.push(item);
-  console.log("There are " + cart.length + " items in your cart."); }
-  return cart;
+  // var item = document.getElementById("add").submit.value;
+  cart.push("item");
+  console.log("There are " + cart.length + " items in your cart.");
 }
 
 function removeFromCart () {
@@ -71,7 +70,6 @@ function removeFromCart () {
   if (cart.length > 1) {
     cart.pop();
   }
-  return cart;
 }
 
 // console.log("There are " + cart.length + " items in the cart.");
