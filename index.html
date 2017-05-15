@@ -3,7 +3,6 @@
 <head>
   <title>Winter Scarves</title>
   <meta charset="utf-8">
-  <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <!-- Optional theme -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
@@ -35,6 +34,12 @@
               <li class="right cart-info">
                 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
               </li>
+              <li class="search">
+                <form class="search">
+                  <i class="searchicon fa fa-search" aria-hidden="true"></i>
+                  <input class="search" type="text" name="searchbar" value="" placeholder="Search...">
+                </form>
+              </li>
             </ul>
           </nav>
         </div>
@@ -44,9 +49,9 @@
   <main class="container-fluid">
     <div class="row">
       <aside class="col-md-2">
-        <form name="mailingList" onsubmit="thankYou();">
+        <form class="email" name="mailingList" onsubmit="thankYou();">
           <label>Sign up for our mailing list:
-            <input type="email" name="email">
+            <input class="email" type="email" name="email" required>
           </label>
           <input class="submit" type="submit" value="Submit">
         </form>
@@ -60,6 +65,21 @@
             <p>26.99</p>
             <p>Two classic patterns in one great look: This supersoft and cozy reversible scarf instantly doubles your street-style cred.</p>
             <p>100% acrylic.</p>
+
+            <form id="add" onsubmit="addToCart();">
+              <input type="submit" name="addToCart" value="Add to Cart"  >
+            </form>
+            <form id="remove" onsubmit="removeFromCart();">
+              <input type="submit" name="addToCart" value="Remove from Cart">
+            </form>
+
+            <!-- <form id="addtocart" name="cartoptions" onsubmit="addToCart();">
+              <select>
+                <option name="option" value="Add to Cart">Add to Cart</option>
+                <option name="option" value="Remove from Cart">Remove from Cart</option>
+              </select>
+              <input type="submit" name="submit-button" value="Submit" >
+            </form> -->
           </div>
 
           <div class="item">
@@ -123,8 +143,9 @@
       </section>
     </div>
   </main>
-  <script type="text/javascript" src="js/script.js"></script>
-  <!-- Latest compiled and minified JavaScript -->
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

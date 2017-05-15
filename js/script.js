@@ -48,9 +48,49 @@ var products = [
     "imageTitle": "twill.jpg"
   }
 ]
-// var email = document.mailingList.email.value;
+
 
 function thankYou() {
   event.preventDefault();
   console.log("Thank you for signing up for our mailing list, " + document.mailingList.email.value + "!");
 }
+
+var cart = [];
+
+
+function addToCart () {
+  event.preventDefault();
+  var item = document.getElementById("add").option.value;
+  cart.push(item);
+  console.log("There are " + cart.length + " items in your cart."); }
+  return cart;
+}
+
+function removeFromCart () {
+  event.preventDefault ();
+  if (cart.length > 1) {
+    cart.pop();
+  }
+  return cart;
+}
+
+// console.log("There are " + cart.length + " items in the cart.");
+// function addToCart(event) {
+//   // event.preventDefault();
+//   var option = document.getElementById("cartOption").selectedIndex;
+//   console.log(option);
+//   if (option == "0") {
+//     cart.push(1);
+//   }
+//   else {
+//     if (cart > 1) {
+//       cart.pop();
+//     }
+//   }
+// }
+
+// function totalCartPrice() {
+//
+// }
+
+// var totalPrice = totalCartPrice();

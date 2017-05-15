@@ -36,11 +36,30 @@ nav {
   background-color: #4E77C7;
 }
 
+
+
 ul {
   display: flex;
   flex-flow; row wrap;
   justify-content: flex-start;
   padding: 0.8rem;
+  align-items: center;
+}
+
+@media (max-width: 450px) {
+  ul {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  ul li {
+    display: block;
+    border-bottom: 1px solid white;
+    width: 100%;
+    padding: 0.25rem;
+  }
 }
 
 i {
@@ -52,6 +71,9 @@ i:hover {
   color: black;
 }
 
+i.searchicon:hover {
+  color: white;
+}
 
 a {
   color: white;
@@ -80,11 +102,33 @@ h1 .logo-w {
   font-size: 3rem;
 }
 
+@media (max-width: 445px) {
+  h1 {
+    padding: 1rem;
+  }
+}
 /**************** ASIDE ****************/
 
 form {
   max-width: 98%;
   text-align: center;
+}
+
+form.addtocart {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (max-width: 955px) {
+  form {
+    width: 100%;
+  }
+}
+
+label.radio {
+  color: black;
+  font-size: 0.8rem;
 }
 
 input[type="submit"] {
@@ -94,6 +138,14 @@ input[type="submit"] {
   border-radius: 5px;
   font-size: .75rem;
   color: white;
+}
+
+input[type=email] {
+  color: black;
+}
+
+input[type=email]:focus {
+  border: 2px solid #3D7FCF;
 }
 
 aside {
@@ -111,8 +163,18 @@ form > label {
 
 }
 
-input {
+form.search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+input.email {
   margin-top: 0.5rem;
+}
+
+input.search {
+  margin-left: 0.7rem;
 }
 
 .submit {
