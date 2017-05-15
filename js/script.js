@@ -49,18 +49,15 @@ var products = [
   }
 ]
 
-
 function thankYou() {
   event.preventDefault();
   console.log("Thank you for signing up for our mailing list, " + document.mailingList.email.value + "!");
 }
 
-
 var cart = [];
 
 function addToCart () {
   event.preventDefault();
-  // var item = document.getElementById("add").submit.value;
   cart.push("item");
   console.log("There are " + cart.length + " items in your cart.");
 }
@@ -68,27 +65,7 @@ function addToCart () {
 function removeFromCart () {
   event.preventDefault ();
   if (cart.length > 1) {
-    cart.pop();
+    cart.pop("item");
+    console.log("There are " + cart.length + " items in your cart.");
   }
 }
-
-// console.log("There are " + cart.length + " items in the cart.");
-// function addToCart(event) {
-//   // event.preventDefault();
-//   var option = document.getElementById("cartOption").selectedIndex;
-//   console.log(option);
-//   if (option == "0") {
-//     cart.push(1);
-//   }
-//   else {
-//     if (cart > 1) {
-//       cart.pop();
-//     }
-//   }
-// }
-
-// function totalCartPrice() {
-//
-// }
-
-// var totalPrice = totalCartPrice();
