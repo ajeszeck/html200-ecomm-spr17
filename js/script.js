@@ -58,14 +58,24 @@ var cart = [];
 
 function addToCart () {
   event.preventDefault();
+  var cartCount = document.getElementById("cart-count");
   cart.push("item");
+  cartCount.innerHTML = "(" + cart.length + ")";
   console.log("There are " + cart.length + " items in your cart.");
 }
 
 function removeFromCart () {
   event.preventDefault ();
+  var cartCount = document.getElementById("cart-count");
   if (cart.length > 0) {
     cart.pop("item");
+    cartCount.innerHTML = "(" + cart.length + ")";
     console.log("There are " + cart.length + " items in your cart.");
   }
+  if (cart.length == 0) {
+    cartCount.innerHTML = "";
+  }
+  // } elseif (cart.length == 0){
+  //   cartCount.innerHTML = "";
+  // }
 }
