@@ -17,7 +17,7 @@ p {
 
 /* TODO: size images manually so this is not necessary */
 img {
-  max-width: 100%;
+  max-width: 98%;
   height: auto;
 }
 
@@ -198,7 +198,7 @@ form.email {
   }
 }
 
-@media (min-width: 993px) {
+@media (min-width: 992px) {
   .email-label {
     padding: 1rem;
   }
@@ -213,7 +213,7 @@ form.email {
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   form.email {
     padding-top: 0;
     padding-bottom: 0;
@@ -292,6 +292,7 @@ section > h1 {
   text-align: center;
   margin: 1rem;
   height: 100%;
+  overflow: hidden;
 }
 
 div.item img {
