@@ -71,3 +71,9 @@ Each weekly assignment will be graded independently. There will not be a final g
 
 ## Testing 
 [update this section with information about the testing steps you took to ensure site quality]
+- Viewed site using different devices and screen sizes
+- Used google chrome dev tools to identify breakpoints and use media queries to optimize site quality at various sizes
+- Checked HTML using W3 validator
+- Checked responsivness of site using responsivedesignchecker.com
+- Tested web page performance on webpagetest.org
+
