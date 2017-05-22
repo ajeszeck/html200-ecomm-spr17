@@ -289,9 +289,9 @@ section > h1 {
   flex-grow: 1;
   border: 1px solid black;
   max-width: 30%;
+  min-width: 210px;
   text-align: center;
   margin: 1rem;
-  height: 100%;
   overflow: hidden;
 }
 
@@ -301,7 +301,7 @@ div.item img {
 
 @media (max-width: 400px) {
   .item {
-    max-width: 185px;
+    min-width: 210px;
   }
 }
 
